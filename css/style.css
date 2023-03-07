@@ -27,6 +27,9 @@ header{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+header div span{
+    color: #fff;
+}
 
 .btn{
     padding: 1rem 2rem;
@@ -42,32 +45,34 @@ header{
 }
 
 .img-container{
-    width: 30%;
+    width: 20%;
 }
 
 /* Main */
-main{
+
+/* Description */
+.description-container{
     background-color: #1a2037fb;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-width: 60%; */
     margin: 0 auto;
     padding: 5rem 0;
     color: var(--secondary-color);
     position: relative;
 }
 
-.img-about{
-    width: 20%;
+.description-container .img-about{
+    width: 15%;
+    margin-right: 3rem;
 }
 
-.content-about{
+.description-container .content-about{
     max-width: 40%;
-    word-wrap: break-word;
-    /* border: 1px solid red; */
 }
 
-.content-about button{
+.description-container .content-about button{
     margin-right: 1rem;
 }
+
+/* Skills */
