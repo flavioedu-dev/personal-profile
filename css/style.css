@@ -96,16 +96,35 @@ header div span{
     width: 100%;
     position: absolute;
     left: 0;
-    animation: rotation 5s linear infinite alternate;
+    transform: translateX(-100%);
+    animation: rotation1 6.5s linear infinite;
+    animation-delay: .7s;
 }
 
-@keyframes rotation {
+.skills-container div img:nth-child(2){
+    animation-delay: 1.4s;
+}.skills-container div img:nth-child(3){
+    animation-delay: 2.1s;
+}.skills-container div img:nth-child(4){
+    animation-delay: 2.8s;
+}.skills-container div img:nth-child(5){
+    animation-delay: 3.5s;
+}.skills-container div img:nth-child(6){
+    animation-delay: 4.2s;
+}.skills-container div img:nth-child(7){
+    animation-delay: 4.9s;
+}.skills-container div img:nth-child(8){
+    animation-delay: 5.6s;
+}.skills-container div img:nth-child(9){
+    animation-delay: 6.3s;
+}
+
+@keyframes rotation1 {
     0%{
-        left: 0;
-        transform: translateX(110%);
+        transform: translateX(55%);
         
     }
     100%{
-        transform: translateX(-110%);
+        transform: translateX(-55%);
     }
 }
