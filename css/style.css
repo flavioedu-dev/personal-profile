@@ -6,6 +6,7 @@
 body{
     font-family: 'Tilt Neon', cursive;
     padding-bottom: 700px;
+    background-color: var(--primary-color);
 }
 
 *{
@@ -24,8 +25,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+header div{
+    max-width: 40%;
 }
 header div span{
     color: #fff;
@@ -52,7 +55,6 @@ header div span{
 
 /* Description */
 .description-container{
-    background-color: #1a2037fb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,51 +82,24 @@ header div span{
     background-color: var(--primary-color);
     color: #fff;
     text-align: center;
-    padding: 10rem;
+    padding: 5rem;
 }
 
-.skills-container div{
-    /* border: 1px solid red; */
-    width: 60%;
-    height: 10vh;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+.skills-container h1{
+    font-size: 2.5rem;
 }
 
-.skills-container div img{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transform: translateX(-100%);
-    animation: rotation1 6.5s linear infinite;
-    animation-delay: .7s;
+.inner-skills{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-.skills-container div img:nth-child(2){
-    animation-delay: 1.4s;
-}.skills-container div img:nth-child(3){
-    animation-delay: 2.1s;
-}.skills-container div img:nth-child(4){
-    animation-delay: 2.8s;
-}.skills-container div img:nth-child(5){
-    animation-delay: 3.5s;
-}.skills-container div img:nth-child(6){
-    animation-delay: 4.2s;
-}.skills-container div img:nth-child(7){
-    animation-delay: 4.9s;
-}.skills-container div img:nth-child(8){
-    animation-delay: 5.6s;
-}.skills-container div img:nth-child(9){
-    animation-delay: 6.3s;
+.inner-skills img{
+    width: 8%;
+    transition: .8s;
 }
-
-@keyframes rotation1 {
-    0%{
-        transform: translateX(55%);
-        
-    }
-    100%{
-        transform: translateX(-55%);
-    }
+.inner-skills img:hover{
+    scale: 1.2;
 }
