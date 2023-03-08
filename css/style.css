@@ -76,3 +76,36 @@ header div span{
 }
 
 /* Skills */
+.skills-container{
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10rem;
+}
+
+.skills-container div{
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 10vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-container div img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    animation: rotation 5s linear infinite alternate;
+}
+
+@keyframes rotation {
+    0%{
+        left: 0;
+        transform: translateX(110%);
+        
+    }
+    100%{
+        transform: translateX(-110%);
+    }
+}
