@@ -155,7 +155,7 @@ footer{
 @media (max-width: 400px){
     header{
         font-size: .5rem;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
     main{
@@ -163,14 +163,14 @@ footer{
     }
  
     .description-container{
-        padding: 2rem;
+        padding: 4rem 2rem;
         position: relative;
     }
 
     .description-container .img-about{
-        width: 80px;
-        left: 15vw;
-        top: 3vh;
+        width: 70px;
+        left: 16vw;
+        top: 8.5vh;
         position: absolute;
     }
     .description-container .content-about{
@@ -194,7 +194,7 @@ footer{
     }
 
     .skills-container{
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
 
     .skills-container h1{
