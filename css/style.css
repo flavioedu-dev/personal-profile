@@ -17,6 +17,7 @@ body{
 img{
     max-width: 100%;
     max-height: 100%;
+    vertical-align: middle;
 }
 
 /* Header */
@@ -25,8 +26,9 @@ header{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding-top: 2rem;
     color: var(--secondary-color);
-    padding: .5rem 0;
+    background: linear-gradient(90deg, var(--primary-color) 60%, #f46c9596);
 }
 header div{
     max-width: 40%;
@@ -35,42 +37,29 @@ header div span{
     color: #fff;
 }
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-nav a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.3rem;
-    transition: .3s;
-}
-nav a:hover{
-    color: var(--secondary-color);
-}
-
 .btn{
     padding: 1rem 2rem;
     margin-top: 2rem;
     background-color: transparent;
-    color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     text-transform: uppercase;
     cursor: pointer;
 }
+.btn a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 .reverse{
     background-color: var(--secondary-color);
+}
+.reverse a {
     color: #fff;
 }
 
 .img-container{
-    width: 20%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px 3px #16172c;
-    overflow: hidden;
+    width: 18%;
 }
 
 /* Main */
@@ -83,12 +72,15 @@ nav a:hover{
     margin: 0 auto;
     padding: 5rem 0;
     color: #fff;
-    background-color: #2b2c44;
+    background-color: #1f2036;
 }
 
 .description-container .img-about{
     width: 15%;
     margin-right: 3rem;
+    border-radius: 50%;
+    box-shadow: -5px 3px 5px 3px #16172c;
+    overflow: hidden;
 }
 
 .description-container .content-about{
@@ -119,8 +111,8 @@ nav a:hover{
 }
 
 .inner-skills img{
-    width: 6%;
-    transition: .7s;
+    width: 8%;
+    transition: .6s;
 }
 .inner-skills img:hover{
     scale: 1.2;
