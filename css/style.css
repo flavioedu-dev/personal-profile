@@ -44,17 +44,31 @@ header div span{
     border: 1px solid var(--secondary-color);
     text-transform: uppercase;
     cursor: pointer;
+    transition: .2s;
 }
+.btn:hover{
+    transform: translateY(2px);
+}
+
 .btn a{
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
 }
+.btn:hover a{
+    color: #fff;
+}
 
 .reverse{
     background-color: var(--secondary-color);
 }
+
 .reverse a {
+    color: #fff;
+    color: var(--primary-color);
+}
+
+.reverse:hover a {
     color: #fff;
 }
 
@@ -81,6 +95,18 @@ header div span{
     border-radius: 50%;
     box-shadow: -5px 3px 5px 3px #16172c;
     overflow: hidden;
+}
+.description-container .img-about:hover{
+    animation: rotation .5s linear alternate;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate3d(0, 1, 0, 0deg);
+    }to{
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+    
 }
 
 .description-container .content-about{
@@ -111,7 +137,7 @@ header div span{
 }
 
 .inner-skills img{
-    width: 8%;
+    width: 7vw;
     transition: .6s;
 }
 .inner-skills img:hover{
