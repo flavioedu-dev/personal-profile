@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Tilt Neon', cursive;
-    padding-bottom: 700px;
+    /* padding-bottom: 700px; */
     background-color: var(--primary-color);
 }
 
@@ -60,8 +60,8 @@ header div span{
     align-items: center;
     margin: 0 auto;
     padding: 5rem 0;
-    color: var(--secondary-color);
-    position: relative;
+    color: #fff;
+    background-color: #181e36;
 }
 
 .description-container .img-about{
@@ -97,9 +97,17 @@ header div span{
 }
 
 .inner-skills img{
-    width: 8%;
+    width: 6%;
     transition: .8s;
 }
 .inner-skills img:hover{
     scale: 1.2;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
