@@ -29,6 +29,7 @@ header{
     padding-top: 2rem;
     color: var(--secondary-color);
     background: linear-gradient(90deg, var(--primary-color) 60%, #f46c9596);
+    font-size: 1.2rem;
 }
 header div{
     max-width: 40%;
@@ -77,6 +78,9 @@ header div span{
 }
 
 /* Main */
+main{
+    font-size: 1.1rem;
+}
 
 /* Description */
 .description-container{
@@ -87,6 +91,7 @@ header div span{
     padding: 5rem 0;
     color: #fff;
     background-color: #1f2036;
+    text-align: justify;
 }
 
 .description-container .img-about{
@@ -152,30 +157,172 @@ footer{
 }
 
 /* Medias Queries */
-@media (max-width: 400px){
+@media (max-width: 1400px){
     header{
-        font-size: .8rem;
-        padding-top: 4rem;
+        font-size: 1.2rem;
     }
 
     main{
-        font-size: .8rem;
+        font-size: 1.1rem;
+    }
+
+    .description-container .img-about{
+        width: 17%;
+    }
+
+    .inner-skills img{
+        width: 8vw;
+    }
+    
+}
+
+@media (max-width: 1300px){
+    header{
+        font-size: 1.1rem;
     }
 
     .img-container{
+        width: 22%;
+    }
+
+    main{
+        font-size: 1rem;
+    }
+
+    .description-container .img-about{
+        width: 18%;
+    }
+
+    .inner-skills img{
+        width: 10vw;
+    }
+
+    .btn{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .img-container{
         width: 25%;
     }
- 
+
     .description-container{
         display: block;
-        padding: 2rem 4rem;
+        padding: 3rem 0rem;
         text-align: center;
     }
 
     .description-container .img-about{
-        width: 35%;
+        width: 15%;
         margin: 0 auto;
         margin-bottom: 1rem;
+    }
+    .description-container .content-about{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .description-container .content-about h1{
+        margin-bottom: .5rem;
+    }
+
+    .description-container .content-about div > button{
+        margin: 0rem .5rem;
+        margin-top: 1.5rem;
+    }
+
+    .description-container .content-about p {
+        text-align: justify;
+    }
+
+    .btn{
+        font-size: .7rem;
+    }
+
+    .skills-container h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    header div{
+        max-width: 50%;
+    }
+
+    .description-container .img-about{
+        width: 20%;
+    }
+
+    .description-container .content-about{
+        max-width: 60%;
+    }
+
+    .btn{
+        padding: .8rem 1.3rem;
+        font-size: .7rem;
+    }
+
+    .inner-skills img{
+        width: 13vw;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        font-size: 1rem;
+    }
+
+    main{
+        font-size: .9rem;
+    }
+
+    .description-container .content-about{
+        max-width: 70%;
+    }
+
+    .btn{
+        padding: .8rem 1.3rem;
+    }
+
+    .inner-skills{
+        gap: 1.2rem;
+        margin: 1.2rem 0;
+    }
+
+    .inner-skills img{
+        width: 25%;
+    }
+}
+
+@media (max-width: 400px){
+    header{
+        font-size: .95rem;
+        padding-top: 3rem;
+    }
+
+    header div {
+        max-width: 40%;
+    }
+
+    header > div:nth-child(1){
+        margin-bottom: 1rem;
+    }
+
+    .img-container{
+        width: 30%;
+    }
+
+    main{
+        font-size: .9rem;
+    }
+ 
+    .description-container{
+        padding: 2rem 4rem;
+    }
+
+    .description-container .img-about{
+        width: 35%;
     }
     .description-container .content-about{
         max-width: 100%;
@@ -184,11 +331,6 @@ footer{
     .description-container .content-about div > button{
         margin: 0rem .3rem;
         margin-top: 1rem;
-
-    }
-
-    .description-container .content-about p {
-        text-align: justify;
     }
 
     .btn{
@@ -202,7 +344,7 @@ footer{
     }
 
     .skills-container h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .inner-skills{
@@ -211,7 +353,7 @@ footer{
     }
 
     .inner-skills img{
-        width: 13vw;
+        width: 15vw;
     }
 
     footer{
